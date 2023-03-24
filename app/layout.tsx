@@ -1,3 +1,5 @@
+import SideNavBar from "@/components/global/SideNavBar";
+import TopNavBar from "@/components/global/TopNavBar";
 import "./globals.css";
 
 export const metadata = {
@@ -12,7 +14,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="flex flex-col h-screen bg-zinc-900 text-zinc-100 ">
+          <TopNavBar />
+          <div className="flex h-full">
+            <SideNavBar />
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }

@@ -1,0 +1,7 @@
+.search-icon {
+  display: none;
+}
+
+.search-bar:focus-within .search-icon {
+  display: flex;
+}
