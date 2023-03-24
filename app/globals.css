@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* scroll bar style */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Search icon style */
+.search-icon {
+  display: none;
+}
+
+.search-bar:focus-within .search-icon {
+  display: flex;
+}
+
+/* side bar style */
+.sidebar {
+  overflow-y: auto;
+  max-height: calc(100vh - 78px);
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background: #555;
+}

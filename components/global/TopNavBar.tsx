@@ -5,8 +5,6 @@ import { FiMenu } from "react-icons/fi";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 
-import "./TopNavBar.css";
-
 const TopNavBar = () => {
   return (
     <div className="p-4 flex justify-between items-center">
