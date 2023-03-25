@@ -26,7 +26,7 @@ import NavItem from "./NavItem";
 
 const SideNavBar = () => {
   return (
-    <div className="flex sidebar">
+    <div className="lg:flex sidebar hidden lg:w-80">
       <div className="flex flex-col">
         <NavItem icon={<AiFillHome size={26} />} text="home" />
         <NavItem icon={<GiShorts size={26} />} text="Shorts" />
