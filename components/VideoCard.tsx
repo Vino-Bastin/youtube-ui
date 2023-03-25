@@ -30,7 +30,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ video }) => {
           <h3 className="text-sm font-medium">{video.title}</h3>
           <p className="text-xs text-gray-500">{video.channelName}</p>
           <p className="text-xs text-gray-500">
-            {Intl.NumberFormat("US").format(video.viewCount).toString()} views
+            {Intl.NumberFormat("en-US").format(video.viewCount).toString()} views
           </p>
         </div>
       </div>
